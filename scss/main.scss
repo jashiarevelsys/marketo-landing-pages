@@ -43,14 +43,56 @@ $revel-night: #373B40;
 		min-height: 700px;
 
 
-		img {
+		img.revel-logo {
 			display: block;
-			margin: 40px auto 20vh;
+			margin: 40px auto 10vh;
+		}
+		h3 {
+			margin-bottom: 10vh;
 		}
 		.mktoForm {
+			background-color: white;
+			padding: 20px; 
+			border-radius: 7px;
+			border: 2px solid $revel-blue;
+			margin-bottom: 30px;
+
+			::-webkit-input-placeholder {
+			  color: $revel-night;
+			}
+
+			:-moz-placeholder { /* Firefox 18- */
+			  color: $revel-night;
+			}
+
+			::-moz-placeholder { /* Firefox 19+ */
+			  color: $revel-night;
+			}
+
+			:-ms-input-placeholder { /* IE 10+ */
+			  color: $revel-night;
+			}
+
+			::-ms-input-placeholder { /* Edge */
+			  color: $revel-night;
+			}
+
+			:placeholder-shown { /* Standard one last! */
+			  color: $revel-night;
+			}
+
 			.mktoFormRow {
 				input {
 					text-align: center;
+					color: $revel-night;
+
+					&#LastName, &#FirstName, &#Email, &#Phone {
+						background-color: #ebebeb;
+					}
+					&:focus {
+						border-bottom: thin solid $revel-blue;
+					}
+
 				}
 
 			}
