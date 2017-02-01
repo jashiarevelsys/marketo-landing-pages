@@ -1,5 +1,6 @@
 $revel-blue: #00a3e0;
 $revel-night: #373B40;
+$revel-night-t: rgba(55, 59, 64, .7);
 
 
 .header {
@@ -10,53 +11,74 @@ $revel-night: #373B40;
 
 
 .main-body {
-	color: $revel-night;
+	color: #ebebeb;
+	background-image: url("http://revelsystems.com/wp-content/uploads/2017/02/MG_0060.jpg");
 	margin-bottom: 0px;
+	background-size: cover;
+	height: 100vh;
+	min-height: 700px;
+	position: relative;
+	background-position: bottom;
 	.value-proposition {
-		background-size: cover;
-		height: 100vh;
-		min-height: 700px;
-		position: relative;
-		background-position: center;
+		margin: 10% auto;
+		h1{
+			font-size: 2.5em;
+		}
+		ul>li{
+			list-style: disc;
+			font-size: 1.7em;
+			text-align: left;
+		}
 		.light-hue {
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background-color: rgba(255, 255, 255, 0.5);
+			background-color: rgba(0, 163, 224, 0.2);
 		}
 		.words {
+			font-size: 1em;
 			position: relative;
 			z-index: 4;
-			ul {
-				li {
-					font-size: 2rem;
-				}
-			}
+			padding: 40px;
+			text-align: center;
+			margin: auto 10%;
+		}
+		@media only screen and (max-width: 993px){
+			display: none;
 		}
 	}
 	.the-form {
-		background-color: $revel-night;
-		color: white;
+		z-index: 99;
+		position: relative;
+		background-color: $revel-night-t;
+		color:#ebebeb;
 		height: 100vh;
 		min-height: 700px;
+		width: 100%;
 
 
 		img.revel-logo {
 			display: block;
 			margin: 40px auto 10vh;
+			width: 20%;
 		}
 		h3 {
+			font-size: 2.5em;
 			margin-bottom: 10vh;
+			line-height: 1.6em;
 		}
 		.mktoForm {
 			background-color: white;
-			padding: 20px; 
+			padding: 20px;
 			border-radius: 7px;
 			border: 2px solid $revel-blue;
-			margin-bottom: 30px;
-
+			margin: 30px auto;
+			max-width: 60%;
+			@media only screen and (max-width: 993px){
+				max-width: 80%;
+			}
 			::-webkit-input-placeholder {
 			  color: $revel-night;
 			}
@@ -85,6 +107,7 @@ $revel-night: #373B40;
 				input {
 					text-align: center;
 					color: $revel-night;
+					border-radius: 6px;
 
 					&#LastName, &#FirstName, &#Email, &#Phone {
 						background-color: #ebebeb;
