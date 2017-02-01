@@ -1,6 +1,7 @@
 $revel-blue: #00a3e0;
 $revel-night: #373B40;
 $revel-night-t: rgba(55, 59, 64, .7);
+$revel-blue-t: rgba(0, 163, 224, 0.3);
 
 
 .header {
@@ -12,21 +13,22 @@ $revel-night-t: rgba(55, 59, 64, .7);
 
 .main-body {
 	color: #ebebeb;
-	background-image: url("http://revelsystems.com/wp-content/uploads/2017/02/MG_0060.jpg");
+	background-image: url("http://revelsystems.com/wp-content/uploads/2017/02/qsr-lp.jpg");
 	margin-bottom: 0px;
 	background-size: cover;
 	height: 100vh;
 	min-height: 700px;
 	position: relative;
-	background-position: bottom;
+	background-position: center;
 	.value-proposition {
-		margin: 10% auto;
+		margin: 8% auto;
 		h1{
 			font-size: 2.5em;
 		}
 		ul>li{
 			list-style: disc;
 			font-size: 1.7em;
+			line-height: 1.9em;
 			text-align: left;
 		}
 		.light-hue {
@@ -35,7 +37,7 @@ $revel-night-t: rgba(55, 59, 64, .7);
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background-color: rgba(0, 163, 224, 0.2);
+			background-color: $revel-blue-t;
 		}
 		.words {
 			font-size: 1em;
