@@ -2737,6 +2737,14 @@
 		"oAP": "\/fonts\/roboto\/Roboto-Thin.woff2",
 		"oF": 0
 		},
+	"\/img\/bg-thank-you.png": {
+		"ft": 32768,
+		"iS": 97087,
+		"oA": 0,
+		"oAP": "\/img\/bg-thank-you.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -2773,6 +2781,12 @@
 		"oF": 2,
 		"oS": 1,
 		"uL": 1
+		},
+	"\/thank-you.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/thank-you.html",
+		"oF": 0
 		}
 	},
 "hooks": [
