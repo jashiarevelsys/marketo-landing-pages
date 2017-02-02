@@ -1,3 +1,7 @@
+* {
+  font-family: "proxima-nova-soft";
+}
+
 .header {
   background-color: #00a3e0;
   height: 30px;
@@ -5,6 +9,7 @@
 }
 
 .main-body {
+  font-family: "proxima-nova-soft";
   color: #ebebeb;
   background-image: url("http://revelsystems.com/wp-content/uploads/2017/02/qsr-lp.jpg");
   margin-bottom: 0px;
@@ -20,14 +25,20 @@
 }
 
 .main-body .value-proposition h1 {
-  font-size: 2.5em;
+  font-size: 3.2rem;
 }
 
-.main-body .value-proposition ul > li {
-  list-style: disc;
+.main-body .value-proposition .list-features {
   font-size: 1.7em;
   line-height: 1.9em;
   text-align: left;
+  width: 80%;
+  margin-left: 20px;
+}
+
+.main-body .value-proposition .list-features li {
+  list-style: disc;
+  padding-left: 10p;
 }
 
 .main-body .value-proposition .light-hue {
@@ -36,7 +47,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 163, 224, 0.3);
+  background-color: rgba(153, 153, 153, 0.1);
 }
 
 .main-body .value-proposition .words {
@@ -44,7 +55,6 @@
   position: relative;
   z-index: 4;
   padding: 40px;
-  text-align: center;
   margin: auto 10%;
 }
 
@@ -164,7 +174,7 @@
 .get-the-guide p {
   line-height: 1.8em;
   padding: 10px 80px;
-  margin: 5%;
+  margin: 1%;
 }
 
 .get-the-guide .revel-logo {
@@ -183,7 +193,7 @@
   }
 }
 
-.the-form {
+.hide {
   display: none;
 }
 
