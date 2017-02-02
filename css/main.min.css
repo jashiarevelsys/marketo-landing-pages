@@ -5,16 +5,29 @@
 }
 
 .main-body {
-  color: #373B40;
+  color: #ebebeb;
+  background-image: url("http://revelsystems.com/wp-content/uploads/2017/02/qsr-lp.jpg");
   margin-bottom: 0px;
-}
-
-.main-body .value-proposition {
   background-size: cover;
   height: 100vh;
   min-height: 700px;
   position: relative;
   background-position: center;
+}
+
+.main-body .value-proposition {
+  margin: 8% auto;
+}
+
+.main-body .value-proposition h1 {
+  font-size: 2.5em;
+}
+
+.main-body .value-proposition ul > li {
+  list-style: disc;
+  font-size: 1.7em;
+  line-height: 1.9em;
+  text-align: left;
 }
 
 .main-body .value-proposition .light-hue {
@@ -23,32 +36,44 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 163, 224, 0.3);
 }
 
 .main-body .value-proposition .words {
+  font-size: 1em;
   position: relative;
   z-index: 4;
+  padding: 40px;
+  text-align: center;
+  margin: auto 10%;
 }
 
-.main-body .value-proposition .words ul li {
-  font-size: 2rem;
+@media only screen and (max-width: 993px) {
+  .main-body .value-proposition {
+    display: none;
+  }
 }
 
 .main-body .the-form {
-  background-color: #373B40;
-  color: white;
+  z-index: 99;
+  position: relative;
+  background-color: rgba(55, 59, 64, 0.7);
+  color: #ebebeb;
   height: 100vh;
   min-height: 700px;
+  width: 100%;
 }
 
 .main-body .the-form img.revel-logo {
   display: block;
   margin: 40px auto 10vh;
+  width: 20%;
 }
 
 .main-body .the-form h3 {
+  font-size: 2.5em;
   margin-bottom: 10vh;
+  line-height: 1.6em;
 }
 
 .main-body .the-form .mktoForm {
@@ -56,7 +81,14 @@
   padding: 20px;
   border-radius: 7px;
   border: 2px solid #00a3e0;
-  margin-bottom: 30px;
+  margin: 30px auto;
+  max-width: 60%;
+}
+
+@media only screen and (max-width: 993px) {
+  .main-body .the-form .mktoForm {
+    max-width: 80%;
+  }
 }
 
 .main-body .the-form .mktoForm ::-webkit-input-placeholder {
@@ -91,6 +123,7 @@
 .main-body .the-form .mktoForm .mktoFormRow input {
   text-align: center;
   color: #373B40;
+  border-radius: 6px;
 }
 
 .main-body .the-form .mktoForm .mktoFormRow input#LastName, .main-body .the-form .mktoForm .mktoFormRow input#FirstName, .main-body .the-form .mktoForm .mktoFormRow input#Email, .main-body .the-form .mktoForm .mktoFormRow input#Phone {
