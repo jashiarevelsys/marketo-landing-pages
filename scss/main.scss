@@ -1,3 +1,4 @@
+@import "../bower_components/materialize/sass/materialize";
 $proxima-nova-soft: "proxima-nova-soft";
 $revel-blue: #00a3e0;
 $revel-night: #373B40;
@@ -15,11 +16,9 @@ $photo-filter-mid: rgba(153,153,153,.1);
 	width: 100%;
 }
 
-
 .main-body {
 	font-family: $proxima-nova-soft;
 	color: #ebebeb;
-	background-image: url("http://revelsystems.com/wp-content/uploads/2017/02/qsr-lp.jpg");
 	margin-bottom: 0px;
 	background-size: cover;
 	height: 100vh;
@@ -81,7 +80,7 @@ $photo-filter-mid: rgba(153,153,153,.1);
 			margin-bottom: 10vh;
 			line-height: 1.6em;
 		}
-		.mktoForm {
+		form.mktoForm {
 			background-color: white;
 			padding: 20px;
 			border-radius: 7px;
@@ -120,6 +119,7 @@ $photo-filter-mid: rgba(153,153,153,.1);
 					text-align: center;
 					color: $revel-night;
 					border-radius: 6px;
+					width: 100% !important;
 
 					&#LastName, &#FirstName, &#Email, &#Phone {
 						background-color: #ebebeb;
@@ -132,6 +132,8 @@ $photo-filter-mid: rgba(153,153,153,.1);
 
 			}
 			.mktoButtonRow {
+				color: white;
+				margin-left: inherit;
 				button {
 					width: 100%;
 					border-radius: 4px;
@@ -139,6 +141,11 @@ $photo-filter-mid: rgba(153,153,153,.1);
 					padding: 10px;
 					text-transform: uppercase;
 					background-color: $revel-blue;
+					border: thin solid $revel-blue;
+					&:hover {
+						background-color:white;
+						color:$revel-blue;
+					}
 				}
 			}
 		}
