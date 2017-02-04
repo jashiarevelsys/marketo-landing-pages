@@ -82,7 +82,7 @@ $photo-filter-mid: rgba(153,153,153,.1);
 		}
 		form.mktoForm {
 			background-color: white;
-			padding: 20px;
+			padding: 10px 20px;
 			border-radius: 7px;
 			border: 2px solid $revel-blue;
 			margin: 30px auto;
@@ -115,6 +115,12 @@ $photo-filter-mid: rgba(153,153,153,.1);
 			}
 
 			.mktoFormRow {
+				.mktoFormCol {
+					float: inherit;
+				.mktoFieldWrap {
+					float: inherit;
+				}
+				}
 				input {
 					text-align: center;
 					color: $revel-night;
@@ -132,6 +138,13 @@ $photo-filter-mid: rgba(153,153,153,.1);
 
 			}
 			.mktoButtonRow {
+				margin-top: 15px;
+    			width: 100%;
+    			margin-bottom: 15px;
+				span {
+					width: 100%;
+					margin-left: inherit !important;
+				}
 				color: white;
 				margin-left: inherit;
 				button {

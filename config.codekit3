@@ -2816,6 +2816,12 @@
 		"oAP": "\/test-landing-page-v1.html",
 		"oF": 0
 		},
+	"\/thank-you-design.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/thank-you-design.html",
+		"oF": 0
+		},
 	"\/thank-you.html": {
 		"ft": 8192,
 		"oA": 2,
