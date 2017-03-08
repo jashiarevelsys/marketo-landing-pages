@@ -2,10 +2,20 @@
 <html>
 
 <head>
-    <link type="text/css" rel="stylesheet" href="css/marin.css">
+    <link type="text/css" rel="stylesheet" href="http://pages.revelsystems.com/rs/804-YHP-876/images/marin.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
+    <meta class="mktoString" id="topCTA" mktoName="Top CTA above form" default="Request Your Demo">
+    <meta class="mktoString" id="ctaBackImg" mktoName="CTA Background Image" default="http://pages.revelsystems.com/rs/804-YHP-876/images/bg-hero-form-lp.jpg">
+    <meta class="mktoString" id="featureImg1" mktoName="Feature Image 1" default="http://pages.revelsystems.com/rs/804-YHP-876/images/landing-page-imgs-1.png">
+    <meta class="mktoString" id="featureImg2" mktoName="Feature Image 2" default="http://pages.revelsystems.com/rs/804-YHP-876/images/landing-page-imgs-2.png">
+    <meta class="mktoString" id="featureImg3" mktoName="Feature Image 3" default="http://pages.revelsystems.com/rs/804-YHP-876/images/landing-page-imgs-3.png">
+    <meta class="mktoString" id="threeUpValue" mktoName="3 Points Value Proposition" default="Optimize your business with Revel today">
+    <meta class="mktoString" id="featureText1" mktoName="Feature Text 1" default="Countless customizable features to help you generate more revenue" allowHtml="true">
+    <meta class="mktoString" id="featureText2" mktoName="Feature Text 2" default="Real-time reporting and analytics to understnd your business" allowHtml="true">
+    <meta class="mktoString" id="featureText3" mktoName="Feature Text 3" default="All the tools you need to build and maintain customer relationships" allowHtml="true">
+
     <script type="text/javascript">
         function marketoStyle() {
             if ( ( typeof ( jQuery ) == "function" || typeof ( jQuery ) == "object" ) && jQuery( '#heroForm input' ).length > 0 ) {
@@ -35,14 +45,12 @@
             <img class="revel-logo" src="http://static.revelsystems.com/wp-content/themes/reveldown/-/img_min/logo.svg" alt="">
         </a>
     </header>
-    <div class="main-cta-and-form">
+    <div class="main-cta-and-form" style='background-image: url("${ctaBackImg}");'>
         <div class="dark-transparent"></div>
         <div class="cta-form-content">
             <h1>Request Your Demo</h1>
             <div class="" id="heroForm">
-                <script src="//app-sj14.marketo.com/js/forms2/js/forms2.min.js"></script>
-                <form id="mktoForm_2290"></form>
-                <script>MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2290);</script>
+               <div class="mktoForm" mktoName="Marketo Form"></div>
             </div>
         </div>
     </div>
@@ -50,18 +58,16 @@
         <div class="row">
             <h2>Optimize your business with Revel today</h2>
             <div class="col l4 feature">
-                <img src="img/landing-page-imgs-1.png" alt="">
-                <p>Countless customizable features to help you generate more revenue</p>
+                <img src="${featureImg1}" alt="">
+                <p>${featureText1}</p>
             </div>
             <div class="col l4 feature">
-                <img src="img/landing-page-imgs-2.png" alt="">
-                <p>Real-time reporting and analytics 
-            to understnd your business</p>
+                <img src="${featureImg2}" alt="">
+                <p>${featureText2}</p>
             </div>
             <div class="col l4 feature">
-                <img src="img/landing-page-imgs-3.png" alt="">
-                <p>All the tools you need to build
-            and maintain customer relationships</p>
+                <img src="${featureImg3}" alt="">
+                <p>${featureText3}</p>
             </div>
         </div>
     </div>
