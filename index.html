@@ -2,35 +2,16 @@
 <html>
 
 <head>
-    <link type="text/css" rel="stylesheet" href="css/marin.css">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.min.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
-    <script type="text/javascript">
-        function marketoStyle() {
-            if ( ( typeof ( jQuery ) == "function" || typeof ( jQuery ) == "object" ) && jQuery( '#heroForm input' ).length > 0 ) {
-            
-                $=jQuery;
-                $("#heroForm").find("label.mktoLabel").each(function(){
-                    if ($(this).parent().hasClass("mktoRequiredField")) {
-                    $("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":","")+" *");
-                    } else {
-                    $("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":",""));
-                    }
-
-                    $(this).remove();
-                });
-            } else {
-                setTimeout( function(){ marketoStyle(); } , 100 ); 
-            }
-        }
-        marketoStyle() ;
-        
-    </script>    
 </head>
 
 <body>
-<<<<<<< HEAD
 <div>
 
     <div class="header"></div>
@@ -50,57 +31,85 @@
         <div class="col l5 the-form">
         <img class="revel-logo" src="http://static.revelsystems.com/wp-content/themes/reveldown/-/img_min/logo.svg" alt="">
         <h3 class="center-align">Quick service? No problem. <br>Upgrade your POS today!</h3>
-=======
-    <header class="header">
-        <a href="#">
-            <img class="revel-logo" src="http://static.revelsystems.com/wp-content/themes/reveldown/-/img_min/logo.svg" alt="">
-        </a>
-    </header>
-    <div class="main-cta-and-form">
-        <div class="dark-transparent"></div>
-        <div class="cta-form-content">
-            <h1>Request Your Demo</h1>
->>>>>>> origin/master
             <div class="" id="heroForm">
-                <script src="//app-sj14.marketo.com/js/forms2/js/forms2.min.js"></script>
-                <form id="mktoForm_2290"></form>
-                <script>MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2290);</script>
-            </div>
-        </div>
-    </div>
-    <div class="container three-up">
-        <div class="row">
-            <h2>Optimize your business with Revel today</h2>
-            <div class="col l4 feature">
-                <img src="img/landing-page-imgs-1.png" alt="">
-                <p>Countless customizable features to help you generate more revenue</p>
-            </div>
-            <div class="col l4 feature">
-                <img src="img/landing-page-imgs-2.png" alt="">
-                <p>Real-time reporting and analytics 
-            to understnd your business</p>
-            </div>
-            <div class="col l4 feature">
-                <img src="img/landing-page-imgs-3.png" alt="">
-                <p>All the tools you need to build
-            and maintain customer relationships</p>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>Revel Systems ©2017</p>
-    </footer>
-    <script src="https://use.typekit.net/oik2xhe.js"></script>
-    <script>
-    try {
-        Typekit.load({
-            async: true
-        });
-    } catch (e) {}
-    </script>
-    <script type="text/javascript" src="http://pages.revelsystems.com/rs/804-YHP-876/images/jquery-1.11.2.min.js"></script>
+                <div id="lpeCDiv_104094" class="lpeCElement Enterprise_POS_SecurityForm">
+                    <span class="lpContentsItem formSpan">
+<form class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_1561" novalidate="novalidate">
 
-<<<<<<< HEAD
+    <div class="mktoFormRow">
+        <div class="mktoFieldDescriptor mktoFormCol">
+            <div class="mktoOffset"></div>
+            <div class="mktoFieldWrap mktoRequiredField">
+                <div class="mktoGutter mktoHasWidth"></div>
+                <input id="FirstName" name="FirstName" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" placeholder="First Name *">
+                <div class="mktoClear"></div>
+            </div>
+            <div class="mktoClear"></div>
+        </div>
+        <div class="mktoClear"></div>
+    </div>
+    <div class="mktoFormRow">
+        <div class="mktoFieldDescriptor mktoFormCol" >
+            <div class="mktoOffset" ></div>
+            <div class="mktoFieldWrap mktoRequiredField">
+                <div class="mktoGutter mktoHasWidth" ></div>
+                <input id="LastName" name="LastName" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" placeholder="Last Name *">
+           <div class="mktoClear"></div>
+        </div>
+        <div class="mktoClear"></div>
+    </div>
+    <div class="mktoClear"></div>
+</div>
+<div class="mktoFormRow">
+    <div class="mktoFieldDescriptor mktoFormCol" >
+        <div class="mktoOffset" ></div>
+        <div class="mktoFieldWrap mktoRequiredField">
+            <div class="mktoGutter mktoHasWidth" ></div>
+            <input id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoHasWidth mktoRequired" placeholder="Email Address *">
+            <div class="mktoClear"></div>
+        </div>
+        <div class="mktoClear"></div>
+    </div>
+    <div class="mktoClear"></div>
+</div>
+<div class="mktoFormRow">
+    <div class="mktoFieldDescriptor mktoFormCol" >
+        <div class="mktoOffset" ></div>
+        <div class="mktoFieldWrap mktoRequiredField">
+            <div class="mktoGutter mktoHasWidth" ></div>
+            <input id="Phone" name="Phone" maxlength="255" type="tel" class="mktoField mktoTelField mktoHasWidth mktoRequired" placeholder="Phone Number *">
+            <div class="mktoClear"></div>
+        </div>
+        <div class="mktoClear"></div>
+    </div>
+    <div class="mktoClear"></div>
+</div>
+<div class="mktoFormRow">
+    <input type="hidden" name="UTM_Source__c" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;">
+    <div class="mktoClear"></div>
+</div>
+<div class="mktoButtonRow">
+<span class="mktoButtonWrap mktoSimple">
+<button type="submit" class="mktoButton">Get the White Paper</button>
+</span>
+</div>
+                <input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="1561">
+                <input type="hidden" name="lpId" class="mktoField mktoFieldDescriptor" value="3007">
+                <input type="hidden" name="subId" class="mktoField mktoFieldDescriptor" value="51">
+                <input type="hidden" name="munchkinId" class="mktoField mktoFieldDescriptor" value="804-YHP-876">
+                <input type="hidden" name="lpurl" class="mktoField mktoFieldDescriptor" value="//pages.revelsystems.com/EnterprisePOSSecurity_LP.html?cr={creative}&amp;kw={keyword}">
+                <input type="hidden" name="cr" class="mktoField mktoFieldDescriptor" value="">
+                <input type="hidden" name="kw" class="mktoField mktoFieldDescriptor" value="">
+                <input type="hidden" name="q" class="mktoField mktoFieldDescriptor" value="">
+                </form>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
@@ -108,8 +117,6 @@
   Materialize.updateTextFields();
 });
     </script>
-=======
->>>>>>> origin/master
 </body>
 
 </html>
