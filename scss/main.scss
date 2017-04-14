@@ -1,19 +1,24 @@
+@import "../bower_components/materialize/sass/materialize";
+$proxima-nova-soft: "proxima-nova-soft";
 $revel-blue: #00a3e0;
 $revel-night: #373B40;
 $revel-night-t: rgba(55, 59, 64, .7);
 $revel-blue-t: rgba(0, 163, 224, 0.3);
+$photo-filter-light: rgba(235,235,235,.1);
+$photo-filter-mid: rgba(153,153,153,.1);
 
-
+*{
+	font-family: $proxima-nova-soft;
+}
 .header {
 	background-color: $revel-blue;
 	height: 30px;
 	width: 100%;
 }
 
-
 .main-body {
+	font-family: $proxima-nova-soft;
 	color: #ebebeb;
-	background-image: url("http://revelsystems.com/wp-content/uploads/2017/02/qsr-lp.jpg");
 	margin-bottom: 0px;
 	background-size: cover;
 	height: 100vh;
@@ -23,13 +28,18 @@ $revel-blue-t: rgba(0, 163, 224, 0.3);
 	.value-proposition {
 		margin: 8% auto;
 		h1{
-			font-size: 2.5em;
+			font-size: 3.2rem;
 		}
-		ul>li{
-			list-style: disc;
+		.list-features{
 			font-size: 1.7em;
 			line-height: 1.9em;
 			text-align: left;
+			width: 80%;
+			margin-left: 20px;
+			li{
+				list-style: disc;
+				padding-left: 10p;
+			}
 		}
 		.light-hue {
 			position: absolute;
@@ -37,14 +47,13 @@ $revel-blue-t: rgba(0, 163, 224, 0.3);
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background-color: $revel-blue-t;
+			background-color: $photo-filter-mid;
 		}
 		.words {
 			font-size: 1em;
 			position: relative;
 			z-index: 4;
 			padding: 40px;
-			text-align: center;
 			margin: auto 10%;
 		}
 		@media only screen and (max-width: 993px){
@@ -71,9 +80,9 @@ $revel-blue-t: rgba(0, 163, 224, 0.3);
 			margin-bottom: 10vh;
 			line-height: 1.6em;
 		}
-		.mktoForm {
+		form.mktoForm {
 			background-color: white;
-			padding: 20px;
+			padding: 10px 20px;
 			border-radius: 7px;
 			border: 2px solid $revel-blue;
 			margin: 30px auto;
@@ -106,10 +115,17 @@ $revel-blue-t: rgba(0, 163, 224, 0.3);
 			}
 
 			.mktoFormRow {
+				.mktoFormCol {
+					float: inherit;
+				.mktoFieldWrap {
+					float: inherit;
+				}
+				}
 				input {
 					text-align: center;
 					color: $revel-night;
 					border-radius: 6px;
+					width: 100% !important;
 
 					&#LastName, &#FirstName, &#Email, &#Phone {
 						background-color: #ebebeb;
@@ -122,6 +138,15 @@ $revel-blue-t: rgba(0, 163, 224, 0.3);
 
 			}
 			.mktoButtonRow {
+				margin-top: 15px;
+    			width: 100%;
+    			margin-bottom: 15px;
+				span {
+					width: 100%;
+					margin-left: inherit !important;
+				}
+				color: white;
+				margin-left: inherit;
 				button {
 					width: 100%;
 					border-radius: 4px;
@@ -129,6 +154,11 @@ $revel-blue-t: rgba(0, 163, 224, 0.3);
 					padding: 10px;
 					text-transform: uppercase;
 					background-color: $revel-blue;
+					border: thin solid $revel-blue;
+					&:hover {
+						background-color:white;
+						color:$revel-blue;
+					}
 				}
 			}
 		}
@@ -158,7 +188,7 @@ $revel-blue-t: rgba(0, 163, 224, 0.3);
 	p{
 		line-height: 1.8em;
 		padding: 10px 80px;
-		margin: 5%;
+		margin: 1%;
 	}
 	.revel-logo{
 		min-width: 10%;
@@ -172,7 +202,7 @@ $revel-blue-t: rgba(0, 163, 224, 0.3);
 		display: none;
 	}
 }
-.the-form{
+.hide{
 	display: none;
 }
 a.dwnld-btn{
