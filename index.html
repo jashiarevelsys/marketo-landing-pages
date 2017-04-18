@@ -2,82 +2,151 @@
 <html>
 
 <head>
-    <link type="text/css" rel="stylesheet" href="css/marin.css">
+    <title>Revel Systems</title>
+    <link type="text/css" rel="stylesheet" href="css/index.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
-    <script type="text/javascript">
-        function marketoStyle() {
-            if ( ( typeof ( jQuery ) == "function" || typeof ( jQuery ) == "object" ) && jQuery( '#heroForm input' ).length > 0 ) {
-            
-                $=jQuery;
-                $("#heroForm").find("label.mktoLabel").each(function(){
-                    if ($(this).parent().hasClass("mktoRequiredField")) {
-                    $("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":","")+" *");
-                    } else {
-                    $("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":",""));
-                    }
+    <!-- mkto input fields -->
+    <meta class="mktoString" id="mainCTA" mktoName="Main CTA" default="Request Your Demo">
 
-                    $(this).remove();
-                });
-            } else {
-                setTimeout( function(){ marketoStyle(); } , 100 ); 
-            }
-        }
-        marketoStyle() ;
-        
-    </script>    
+    <meta class="mktoString" id="calloutText" mktoName="Callout Text" default="Every Tool You Need To Run the Business You Want, Every Tool You Need To Run the Business You Want, Every Tool You Need To Run the Business You Want">
+
+    <meta class="mktoString" id="btn-text" mktoName="Button Text" default="Get Revel" allowHtml="true">
+
+    <meta class="mktoString" id="formCTA" mktoName="Form Header Text" default="Request your Demo">
+
+    <meta class="mktoString" id="btn-form-text" mktoName="Form Button Text" default="Get Asset" allowHtml="true">
+
+    <script type="text/javascript" src="http://pages.revelsystems.com/rs/804-YHP-876/images/jquery-1.11.2.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#">
-            <img class="revel-logo" src="http://static.revelsystems.com/wp-content/themes/reveldown/-/img_min/logo.svg" alt="">
-        </a>
-    </header>
+
+
     <div class="main-cta-and-form">
-        <div class="dark-transparent"></div>
-        <div class="cta-form-content">
-            <h1>Request Your Demo</h1>
-            <div class="" id="heroForm">
-                <script src="//app-sj14.marketo.com/js/forms2/js/forms2.min.js"></script>
-                <form id="mktoForm_2290"></form>
-                <script>MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2290);</script>
-            </div>
+      <a href="#">
+          <img class="revel-logo" src="http://static.revelsystems.com/wp-content/themes/reveldown/-/img_min/logo.svg" alt="">
+      </a>
+      <div class="row">
+        <div id="section" class="col m6">
+          <div class="val-prop">
+            <h1 class="h3">${mainCTA}</h1>
+              <p>
+                ${calloutText}
+              </p>
+              <a href="#mkto-form" class="btn-basic-cta">${btn-text}</a>
+          </div>
+        </div>
+        <div id="section" class="col m4">
+          <div class="ipads">
+            <img class="img-ipad" src="img/iPad-dashboard.png" alt="Management Console Dashboard-Reports" />
+            <img class="img-ipad" src="img/iPad-delivery-management.png" alt="Delivery Management">
+            <img class="img-ipad" src="img/iPad-pos.png" alt="Ipad-POS-Checkout">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div id="mkto-form" class="cta-form-content modal">
+      <div class="modal-content" id="heroForm">
+            <h1>${formCTA}</h1>
+            <script src="//app-sj14.marketo.com/js/forms2/js/forms2.min.js"></script>
+            <form id="mktoForm_2290"></form>
+            <!-- <script>MktoForms2.loadForm("//app-sj14.marketo.com", "804-YHP-876", 2290);</script> -->
         </div>
     </div>
-    <div class="container three-up">
-        <div class="row">
-            <h2>Optimize your business with Revel today</h2>
-            <div class="col l4 feature">
-                <img src="img/landing-page-imgs-1.png" alt="">
-                <p>Countless customizable features to help you generate more revenue</p>
-            </div>
-            <div class="col l4 feature">
-                <img src="img/landing-page-imgs-2.png" alt="">
-                <p>Real-time reporting and analytics 
-            to understnd your business</p>
-            </div>
-            <div class="col l4 feature">
-                <img src="img/landing-page-imgs-3.png" alt="">
-                <p>All the tools you need to build
-            and maintain customer relationships</p>
-            </div>
-        </div>
-    </div>
+    <!-- modal end -->
+
     <footer>
         <p>Revel Systems ©2017</p>
     </footer>
     <script src="https://use.typekit.net/oik2xhe.js"></script>
-    <script>
-    try {
+    <!-- <script>
+    try
         Typekit.load({
             async: true
         });
     } catch (e) {}
+    </script> -->
+    <script src="js/materialize.min.js" type="text/javascript">
+//
     </script>
-    <script type="text/javascript" src="http://pages.revelsystems.com/rs/804-YHP-876/images/jquery-1.11.2.min.js"></script>
 
+    <script type="text/javascript">
+      $ = jQuery;
+      $(document).ready(function(){
+       // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+       $('.modal').modal();
+      });
+    </script>
+    <script type="text/javascript">
+
+          var mktoForm2290 ;
+          function revelMktoLaunch_2290(){
+            if ( typeof( MktoForms2 ) == "object" ) {
+              MktoForms2.setOptions({
+                formXDPath:"/rs/804-YHP-876/images/marketo-xdframe-relative.html"
+              });
+              MktoForms2.loadForm("//pages.revelsystems.com", "804-YHP-876", 2290, function(form){
+                mktoForm2290 = form ;
+                marketoStyle_2290() ;
+                marketoHiddenFields_2290() ;
+                // google tag manager addition
+              });
+            } else {
+              setTimeout( function(){revelMktoLaunch_2290();} , 100 );
+            }
+          }
+
+          function marketoHiddenFields_2290() {
+            if ( typeof( InfoGeniuz ) == "object" ) {
+              mktoForm2290.addHiddenFields( InfoGeniuz.addDataToMARKETO_Form() ) ;
+            } else {
+              setTimeout( function(){marketoHiddenFields_2290();} , 100 );
+            }
+          }
+
+          function marketoStyle_2290() {
+            // runs only on this instance of the form
+            if ("#mktoForm_2290") {
+              if ( typeof ( jQuery ) == "function" || typeof ( jQuery ) == "object"  ) {
+                $=jQuery.noConflict();
+                //Three lines to remove all marketo added styles
+                $('.mktoForm input, .mktoForm textarea, .mktoForm label, .mktoForm .mktoFormCol, .mktoForm .mktoButtonWrap, #mktoForm_2290, .mktoRequired').removeAttr("style");
+                $('.mktoOffset, .mktoGutter').remove();
+                $('.mktoForm').css('width', '100%');
+                $('.mktoOffset, .mktoGutter').remove();
+                //replaces label > for="" w/ input placeholder=""
+                $('.mktoForm').find("label.mktoLabel").each(function(){
+                  if($(this).parent().hasClass("mktoRequiredField")){
+                    $("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":","")+" *");
+                  } else {
+                    $("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":",""));
+                  }
+                  $('label').remove();
+                });
+                $('input.mktoField, input.mktoTextField').removeClass('mktoField').removeClass('mktoTextField');
+                $('.mktoFieldWrap').removeClass('mktoFieldWrap');
+                $('.mktoFormCol').removeClass('mktoFormCol');
+                $('.mktoButtonRow').removeClass('mktoButtonRow');
+                $('.mktoForm button').addClass('register').removeClass('mktoButton');
+                $("input.mktoHasWidth, .mktoHtmlText.mktoHasWidth").removeClass('mktoHasWidth');
+                // .css({
+                //      'width':'100%!important',
+                //      'background-color':'#ffffff',
+                //      'margin':'0'
+                //     });
+                $('.register').addClass('btn-basic');
+                $('.register').text('${btn-form-text}');
+
+              }
+            }
+
+          }
+          revelMktoLaunch_2290() ;
+    </script>
 </body>
 
 </html>
