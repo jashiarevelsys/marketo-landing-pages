@@ -33,6 +33,6 @@
   ],
   "private": true,
   "dependencies": {
-    "materialize": "^0.98.0"
+    "materialize": "^0.98.1"
   }
 }
