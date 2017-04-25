@@ -11,10 +11,34 @@ $photo-filter-mid: rgba(153,153,153,.1);
 	font-family: $proxima-nova-soft;
 }
 .header {
-	background-color: $revel-blue;
+	background-color: $revel-night;
 	height: 30px;
 	width: 100%;
+
 }
+.section-main{
+	height: 100vh;
+	background-image: url("../img/newTriPattern.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	text-align: center;
+	h1{
+		margin-bottom: 60px;
+	}
+	img{
+		margin-bottom: 60px;
+	}
+	a.dwnld-btn{
+		border: 1px solid #00a3e0;
+		border-radius: 6px;
+		padding: 10px 80px;
+		background-color: #ebebeb;
+		&:hover{
+			background-color: $revel-blue;
+			color: #ebebeb;
+		}
+}
+
 
 .main-body {
 	font-family: $proxima-nova-soft;

@@ -2657,6 +2657,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/index.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/index.css.map",
+		"oF": 0
+		},
 	"\/css\/main.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2930,11 +2936,44 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/lp-2-tup.png": {
+		"ft": 32768,
+		"iS": 27898,
+		"oA": 0,
+		"oAP": "\/img\/lp-2-tup.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/newTriPattern.png": {
 		"ft": 32768,
 		"iS": 99571,
 		"oA": 0,
 		"oAP": "\/img\/newTriPattern.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/shop004.png": {
+		"ft": 32768,
+		"iS": 33077,
+		"oA": 0,
+		"oAP": "\/img\/shop004.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/zontalBar-tris.png": {
+		"ft": 32768,
+		"iS": 39120,
+		"oA": 0,
+		"oAP": "\/img\/zontalBar-tris.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -3021,7 +3060,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/css\/main.min.css",
+		"oAP": "\/css\/index.css",
 		"oF": 2,
 		"oS": 1,
 		"uL": 1
@@ -3061,6 +3100,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/the-form.html",
+		"oF": 0
+		},
+	"\/twoOptions.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/twoOptions.html",
 		"oF": 0
 		}
 	},
