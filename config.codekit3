@@ -2870,6 +2870,72 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/bg-tri-45ang.png": {
+		"ft": 32768,
+		"iS": 538228,
+		"oA": 0,
+		"oAP": "\/img\/bg-tri-45ang.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/bg-tri-45ang@2x.png": {
+		"ft": 32768,
+		"iS": 538228,
+		"oA": 0,
+		"oAP": "\/img\/bg-tri-45ang@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/brick-cafe.png": {
+		"ft": 32768,
+		"iS": 27090,
+		"oA": 0,
+		"oAP": "\/img\/brick-cafe.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/brick-cafe@2x.png": {
+		"ft": 32768,
+		"iS": 54466,
+		"oA": 0,
+		"oAP": "\/img\/brick-cafe@2x.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/flower-shop.png": {
+		"ft": 32768,
+		"iS": 35625,
+		"oA": 0,
+		"oAP": "\/img\/flower-shop.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/flower-shop@2x.png": {
+		"ft": 32768,
+		"iS": 82930,
+		"oA": 0,
+		"oAP": "\/img\/flower-shop@2x.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/iPad-dashboard.png": {
 		"ft": 32768,
 		"iS": 667845,
@@ -2966,6 +3032,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/tris-pattern.png": {
+		"ft": 32768,
+		"iS": 42361,
+		"oA": 0,
+		"oAP": "\/img\/tris-pattern.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/tris-pattern@2x.png": {
+		"ft": 32768,
+		"iS": 125683,
+		"oA": 0,
+		"oAP": "\/img\/tris-pattern@2x.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

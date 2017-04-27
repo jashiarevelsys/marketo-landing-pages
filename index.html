@@ -8,37 +8,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
     <!-- mkto input fields -->
-    <meta class="mktoString" id="mainCTA" mktoName="Main CTA" default="Request Your Demo">
+    <meta class="mktoString" id="mainCTA" mktoName="Main CTA" default="Learn how you can generate more revenue with Revel">
+    <meta class="mktoString" id="CTA-TEXT" mktoName="CTA-TEXT" default="Drive revenue growth with a tailor-made mobile app. Custom Commerce by Revel is one of the key components to building an omni-channel strategy.">
 
-    <meta class="mktoString" id="calloutText" mktoName="Callout Text" default="Every Tool You Need To Run the Business You Want, Every Tool You Need To Run the Business You Want, Every Tool You Need To Run the Business You Want">
+    <meta class="mktoString" id="btn-text-lft" mktoName="Button Text" default="For Retail" allowHtml="true">
 
-    <meta class="mktoString" id="btn-text" mktoName="Button Text" default="Get Revel" allowHtml="true">
+    <meta class="mktoString" id="btn-text-rght" mktoName="Button Text" default="For Restaurants" allowHtml="true">
 
-    <meta class="mktoString" id="formCTA" mktoName="Form Header Text" default="Request your Demo">
+    <meta class="mktoString" id="btn-link-lft" mktoName="Form Header Text" default="http://revelsystems.com/">
 
-    <meta class="mktoString" id="btn-form-text" mktoName="Form Button Text" default="Get Asset" allowHtml="true">
+    <meta class="mktoString" id="btn-link-rght" mktoName="Form Button Text" default="http://revelsystems.com/" allowHtml="true">
 
     <script type="text/javascript" src="http://pages.revelsystems.com/rs/804-YHP-876/images/jquery-1.11.2.min.js"></script>
 </head>
 
-<body>
+<body id="drip2">
 
-    <header>
+    <header class="main-nav">
       <a href="#">
           <img class="revel-logo" src="http://static.revelsystems.com/wp-content/themes/reveldown/-/img_min/logo.svg" alt="">
       </a>
     </header>
     <section class="section-main" >
-      <h1> Learn how you can generate more revenue with Revel </h1>
       <div class="container">
+        <h1> ${mainCTA} </h1>
+        <p>
+          ${CTA-text)}
+        </p>
         <div class="row cta">
-          <div class="col s6">
-            <img src="img/lp-2-tup.png" alt="">
-            <a class="dwnld-btn" href="#">For Retail</a>
+          <div class="col s12 m6">
+            <div class="lp-2up">
+              <div class="img retail"></div>
+              <a class="dwnld-btn" href="${btn-link-lft}">${btn-text-lft}</a>
+            </div>
           </div>
-          <div class="col s6">
-            <img src="img/shop004.png" alt="">
-            <a class="dwnld-btn" href="#">For Restaurants</a>
+          <div class="col s12 m6">
+            <div class="lp-2up">
+              <div class="img rest"></div>
+              <a class="dwnld-btn" href="${btn-link-rght}">${btn-text-rght}</a>
+            </div>
           </div>
         </div>
       </div>
@@ -48,6 +56,7 @@
     <footer>
         <p>Revel Systems ©2017</p>
     </footer>
+
     <script src="https://use.typekit.net/oik2xhe.js"></script>
     <!-- <script>
     try
@@ -56,83 +65,6 @@
         });
     } catch (e) {}
     </script> -->
-    <script src="js/materialize.min.js" type="text/javascript">
-//
-    </script>
-
-    <script type="text/javascript">
-      $ = jQuery;
-      $(document).ready(function(){
-       // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-       $('.modal').modal();
-      });
-    </script>
-    <script type="text/javascript">
-
-          var mktoForm2290 ;
-          function revelMktoLaunch_2290(){
-            if ( typeof( MktoForms2 ) == "object" ) {
-              MktoForms2.setOptions({
-                formXDPath:"/rs/804-YHP-876/images/marketo-xdframe-relative.html"
-              });
-              MktoForms2.loadForm("//pages.revelsystems.com", "804-YHP-876", 2290, function(form){
-                mktoForm2290 = form ;
-                marketoStyle_2290() ;
-                marketoHiddenFields_2290() ;
-                // google tag manager addition
-              });
-            } else {
-              setTimeout( function(){revelMktoLaunch_2290();} , 100 );
-            }
-          }
-
-          function marketoHiddenFields_2290() {
-            if ( typeof( InfoGeniuz ) == "object" ) {
-              mktoForm2290.addHiddenFields( InfoGeniuz.addDataToMARKETO_Form() ) ;
-            } else {
-              setTimeout( function(){marketoHiddenFields_2290();} , 100 );
-            }
-          }
-
-          function marketoStyle_2290() {
-            // runs only on this instance of the form
-            if ("#mktoForm_2290") {
-              if ( typeof ( jQuery ) == "function" || typeof ( jQuery ) == "object"  ) {
-                $=jQuery.noConflict();
-                //Three lines to remove all marketo added styles
-                $('.mktoForm input, .mktoForm textarea, .mktoForm label, .mktoForm .mktoFormCol, .mktoForm .mktoButtonWrap, #mktoForm_2290, .mktoRequired').removeAttr("style");
-                $('.mktoOffset, .mktoGutter').remove();
-                $('.mktoForm').css('width', '100%');
-                $('.mktoOffset, .mktoGutter').remove();
-                //replaces label > for="" w/ input placeholder=""
-                $('.mktoForm').find("label.mktoLabel").each(function(){
-                  if($(this).parent().hasClass("mktoRequiredField")){
-                    $("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":","")+" *");
-                  } else {
-                    $("input#"+$(this).attr("for")).attr("placeholder" , $(this).text().replace("*","").replace(":",""));
-                  }
-                  $('label').remove();
-                });
-                $('input.mktoField, input.mktoTextField').removeClass('mktoField').removeClass('mktoTextField');
-                $('.mktoFieldWrap').removeClass('mktoFieldWrap');
-                $('.mktoFormCol').removeClass('mktoFormCol');
-                $('.mktoButtonRow').removeClass('mktoButtonRow');
-                $('.mktoForm button').addClass('register').removeClass('mktoButton');
-                $("input.mktoHasWidth, .mktoHtmlText.mktoHasWidth").removeClass('mktoHasWidth');
-                // .css({
-                //      'width':'100%!important',
-                //      'background-color':'#ffffff',
-                //      'margin':'0'
-                //     });
-                $('.register').addClass('btn-basic');
-                $('.register').text('${btn-form-text}');
-
-              }
-            }
-
-          }
-          revelMktoLaunch_2290() ;
-    </script>
 </body>
 
 </html>

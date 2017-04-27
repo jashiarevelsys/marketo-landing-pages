@@ -9,233 +9,322 @@ $photo-filter-mid: rgba(153,153,153,.1);
 
 *{
 	font-family: $proxima-nova-soft;
+	font-weight: 300;
 }
-.header {
-	background-color: $revel-night;
-	height: 30px;
-	width: 100%;
-
-}
-.section-main{
-	height: 100vh;
-	background-image: url("../img/newTriPattern.png");
-	background-repeat: no-repeat;
-	background-position: right;
-	text-align: center;
-	h1{
-		margin-bottom: 60px;
+#drip2{
+	min-height: 100vh;
+	min-width: 100%;
+	header {
+		background-color: $revel-night;
+		padding: 10px 20px;
+		max-width: 100%;
 	}
-	img{
-		margin-bottom: 60px;
-	}
-	a.dwnld-btn{
-		border: 1px solid #00a3e0;
-		border-radius: 6px;
-		padding: 10px 80px;
-		background-color: #ebebeb;
-		&:hover{
-			background-color: $revel-blue;
-			color: #ebebeb;
-		}
-}
-
-
-.main-body {
-	font-family: $proxima-nova-soft;
-	color: #ebebeb;
-	margin-bottom: 0px;
-	background-size: cover;
-	height: 100vh;
-	min-height: 700px;
-	position: relative;
-	background-position: center;
-	.value-proposition {
-		margin: 8% auto;
+	.section-main{
+		background-color: #fff;
+		padding: 40px;
+		min-height: 100%;
+		text-align: center;
+		max-width: 100%;
 		h1{
-			font-size: 3.2rem;
+			margin: 60px auto 40px;
+			color: $revel-blue;
+			@media #{$medium-and-down} {
+    		margin: auto;
+				text-align: center;
+  		}
 		}
-		.list-features{
-			font-size: 1.7em;
-			line-height: 1.9em;
-			text-align: left;
-			width: 80%;
-			margin-left: 20px;
-			li{
-				list-style: disc;
-				padding-left: 10p;
+		p{
+			font-size: 18px;
+			margin: auto;
+			padding: 20px 20px 40px;
+			text-align: center;
+			width: 76%;
+			color: $revel-night;
+			@media #{$medium-and-up}{
+				width: 100%;
 			}
 		}
-		.light-hue {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-color: $photo-filter-mid;
-		}
-		.words {
-			font-size: 1em;
-			position: relative;
-			z-index: 4;
-			padding: 40px;
-			margin: auto 10%;
-		}
-		@media only screen and (max-width: 993px){
-			display: none;
-		}
-	}
-	.the-form {
-		z-index: 99;
-		position: relative;
-		background-color: $revel-night-t;
-		color:#ebebeb;
-		height: 100vh;
-		min-height: 700px;
-		width: 100%;
-
-
-		img.revel-logo {
-			display: block;
-			margin: 40px auto 10vh;
-			width: 20%;
-		}
-		h3 {
-			font-size: 2.5em;
-			margin-bottom: 10vh;
-			line-height: 1.6em;
-		}
-		form.mktoForm {
-			background-color: white;
-			padding: 10px 20px;
-			border-radius: 7px;
-			border: 2px solid $revel-blue;
-			margin: 30px auto;
-			max-width: 60%;
-			@media only screen and (max-width: 993px){
-				max-width: 80%;
-			}
-			::-webkit-input-placeholder {
-			  color: $revel-night;
-			}
-
-			:-moz-placeholder { /* Firefox 18- */
-			  color: $revel-night;
-			}
-
-			::-moz-placeholder { /* Firefox 19+ */
-			  color: $revel-night;
-			}
-
-			:-ms-input-placeholder { /* IE 10+ */
-			  color: $revel-night;
-			}
-
-			::-ms-input-placeholder { /* Edge */
-			  color: $revel-night;
-			}
-
-			:placeholder-shown { /* Standard one last! */
-			  color: $revel-night;
-			}
-
-			.mktoFormRow {
-				.mktoFormCol {
-					float: inherit;
-				.mktoFieldWrap {
-					float: inherit;
+		.cta{
+			margin: auto;
+			.lp-2up{
+				height: 416px;
+				text-align: center;
+				margin: auto;
+				vertical-align: bottom;
+				@media #{$medium-and-down}{
+					// margin-top: 40px;
 				}
+				.retail{
+					background-image:url('/img/flower-shop.png');
+					height: 416px;
+					@media #{$medium-and-up}{
+						background-image:url('/img/flower-shop@2x.png');
+						height: 100%;
+					}
 				}
-				input {
+
+				.rest{
+					background-image:url('/img/brick-cafe.png');
+					height: 416px;
+					@media #{$medium-and-up}{
+						background-image:url('/img/brick-cafe@2x.png');
+						height: 100%;
+					}
+				}
+				.img{
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+					display: block;
+					width: 100%;
+					margin: 10px auto;
 					text-align: center;
-					color: $revel-night;
-					border-radius: 6px;
-					width: 100% !important;
-
-					&#LastName, &#FirstName, &#Email, &#Phone {
-						background-color: #ebebeb;
-					}
-					&:focus {
-						border-bottom: thin solid $revel-blue;
+					@media #{$medium-and-up}{
+						margin: auto;
 					}
 
 				}
-
-			}
-			.mktoButtonRow {
-				margin-top: 15px;
-    			width: 100%;
-    			margin-bottom: 15px;
-				span {
-					width: 100%;
-					margin-left: inherit !important;
-				}
-				color: white;
-				margin-left: inherit;
-				button {
-					width: 100%;
-					border-radius: 4px;
-					border: 0px;
-					padding: 10px;
+				a.dwnld-btn{
+					border: 1px solid #00a3e0;
+					text-decoration: none;
 					text-transform: uppercase;
-					background-color: $revel-blue;
-					border: thin solid $revel-blue;
-					&:hover {
-						background-color:white;
-						color:$revel-blue;
+					border-radius: 6px;
+					padding: 10px 20px;
+					background-color: #ebebeb;
+					max-width: 100%;
+					color: $revel-blue;
+					&:hover{
+						background-color: $revel-blue;
+						color: #ebebeb;
+					}
+					@media #{$medium-and-down}{
+						margin-bottom: 40px;
 					}
 				}
 			}
+			@media #{$medium-and-down} {
+    		margin: auto;
+				background-size: cover;
+  		}
+		}
+		@media #{$medium-and-up}{
+			height: 90vh;
+		}
+	}
+	footer{
+		margin-top: 80px;
+		background-color: $revel-blue;
+		background-image: url("../img/tris-pattern@2x.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		color: #fff;
+		text-align: center;
+		min-width: 100%;
+		bottom: 0;
+		p{
+			margin: 0px;
+			padding: 25px 20px;
 		}
 	}
 }
 
-@media (max-width: 992px) {
-	.main-body {
-		.value-proposition, .the-form {
-			height: inherit;
-		}
-		.the-form {
-			.revel-logo {
-				margin: 40px auto;
-			}
-		}
-	}
-}
-// thnkya page specific
-.get-the-guide{
-	margin: auto;
-	text-align: center;
-	background-color: $revel-night-t;
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	p{
-		line-height: 1.8em;
-		padding: 10px 80px;
-		margin: 1%;
-	}
-	.revel-logo{
-		min-width: 10%;
-		margin: 5% auto;
-	}
-}
-.mbl-thnx{
-	text-align: center;
-	line-height: 1.8em;
-	@media (min-width: 992px){
-		display: none;
-	}
-}
-.hide{
-	display: none;
-}
-a.dwnld-btn{
-	border: 1px solid #00a3e0;
-	border-radius: 6px;
-	padding: 10px 80px;
-	background-color: #ebebeb;
-	&:hover{
-		background-color: $revel-blue;
-		color: #ebebeb;
-	}
-}
+// .main-body {
+// 	font-family: $proxima-nova-soft;
+// 	color: #ebebeb;
+// 	margin-bottom: 0px;
+// 	background-size: cover;
+// 	height: 100vh;
+// 	min-height: 700px;
+// 	position: relative;
+// 	background-position: center;
+// 	.value-proposition {
+// 		margin: 8% auto;
+// 		h1{
+// 			font-size: 3.2rem;
+// 		}
+// 		.list-features{
+// 			font-size: 1.7em;
+// 			line-height: 1.9em;
+// 			text-align: left;
+// 			width: 80%;
+// 			margin-left: 20px;
+// 			li{
+// 				list-style: disc;
+// 				padding-left: 10p;
+// 			}
+// 		}
+// 		.light-hue {
+// 			position: absolute;
+// 			top: 0;
+// 			bottom: 0;
+// 			left: 0;
+// 			right: 0;
+// 			background-color: $photo-filter-mid;
+// 		}
+// 		.words {
+// 			font-size: 1em;
+// 			position: relative;
+// 			z-index: 4;
+// 			padding: 40px;
+// 			margin: auto 10%;
+// 		}
+// 		@media only screen and (max-width: 993px){
+// 			display: none;
+// 		}
+// 	}
+// 	.the-form {
+// 		z-index: 99;
+// 		position: relative;
+// 		background-color: $revel-night-t;
+// 		color:#ebebeb;
+// 		height: 100vh;
+// 		min-height: 700px;
+// 		width: 100%;
+//
+//
+// 		img.revel-logo {
+// 			display: block;
+// 			margin: 40px auto 10vh;
+// 			width: 20%;
+// 		}
+// 		h3 {
+// 			font-size: 2.5em;
+// 			margin-bottom: 10vh;
+// 			line-height: 1.6em;
+// 		}
+// 		form.mktoForm {
+// 			background-color: white;
+// 			padding: 10px 20px;
+// 			border-radius: 7px;
+// 			border: 2px solid $revel-blue;
+// 			margin: 30px auto;
+// 			max-width: 60%;
+// 			@media only screen and (max-width: 993px){
+// 				max-width: 80%;
+// 			}
+// 			::-webkit-input-placeholder {
+// 			  color: $revel-night;
+// 			}
+//
+// 			:-moz-placeholder { /* Firefox 18- */
+// 			  color: $revel-night;
+// 			}
+//
+// 			::-moz-placeholder { /* Firefox 19+ */
+// 			  color: $revel-night;
+// 			}
+//
+// 			:-ms-input-placeholder { /* IE 10+ */
+// 			  color: $revel-night;
+// 			}
+//
+// 			::-ms-input-placeholder { /* Edge */
+// 			  color: $revel-night;
+// 			}
+//
+// 			:placeholder-shown { /* Standard one last! */
+// 			  color: $revel-night;
+// 			}
+//
+// 			.mktoFormRow {
+// 				.mktoFormCol {
+// 					float: inherit;
+// 				.mktoFieldWrap {
+// 					float: inherit;
+// 				}
+// 				}
+// 				input {
+// 					text-align: center;
+// 					color: $revel-night;
+// 					border-radius: 6px;
+// 					width: 100% !important;
+//
+// 					&#LastName, &#FirstName, &#Email, &#Phone {
+// 						background-color: #ebebeb;
+// 					}
+// 					&:focus {
+// 						border-bottom: thin solid $revel-blue;
+// 					}
+//
+// 				}
+//
+// 			}
+// 			.mktoButtonRow {
+// 				margin-top: 15px;
+//     			width: 100%;
+//     			margin-bottom: 15px;
+// 				span {
+// 					width: 100%;
+// 					margin-left: inherit !important;
+// 				}
+// 				color: white;
+// 				margin-left: inherit;
+// 				button {
+// 					width: 100%;
+// 					border-radius: 4px;
+// 					border: 0px;
+// 					padding: 10px;
+// 					text-transform: uppercase;
+// 					background-color: $revel-blue;
+// 					border: thin solid $revel-blue;
+// 					&:hover {
+// 						background-color:white;
+// 						color:$revel-blue;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+//
+// @media (max-width: 992px) {
+// 	.main-body {
+// 		.value-proposition, .the-form {
+// 			height: inherit;
+// 		}
+// 		.the-form {
+// 			.revel-logo {
+// 				margin: 40px auto;
+// 			}
+// 		}
+// 	}
+// }
+// // thnkya page specific
+// .get-the-guide{
+// 	margin: auto;
+// 	text-align: center;
+// 	background-color: $revel-night-t;
+// 	position: relative;
+// 	height: 100vh;
+// 	width: 100%;
+// 	p{
+// 		line-height: 1.8em;
+// 		padding: 10px 80px;
+// 		margin: 1%;
+// 	}
+// 	.revel-logo{
+// 		min-width: 10%;
+// 		margin: 5% auto;
+// 	}
+// }
+// .mbl-thnx{
+// 	text-align: center;
+// 	line-height: 1.8em;
+// 	@media (min-width: 992px){
+// 		display: none;
+// 	}
+// }
+// .hide{
+// 	display: none;
+// }
+// a.dwnld-btn{
+// 	border: 1px solid #00a3e0;
+// 	border-radius: 6px;
+// 	padding: 10px 80px;
+// 	background-color: #ebebeb;
+// 	&:hover{
+// 		background-color: $revel-blue;
+// 		color: #ebebeb;
+// 	}
+// }
